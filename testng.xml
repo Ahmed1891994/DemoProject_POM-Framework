@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<suite name="DemoWebshop">
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="website" value="http://demowebshop.tricentis.com/" />
+
+
+	<parameter name="email" value="kerarrrrrr@yahoo.com" />
+	<parameter name="pass" value="12345678" />
+	<parameter name="firstname" value="Hamid" />
+	<parameter name="lastname" value="Kamel" />
+	<parameter name="confirmpassword" value="12345678" />
+	<parameter name="gender" value='m' />
+
+
+	<listeners>
+		<listener class-name="base.Listeners"></listener>
+	</listeners>
+
+
+
+	<test name="Action1" preserve-order="true">
+		<classes>
+			<parameter name="discount" value="AutomationDiscount2" />
+			<parameter name="company" value="exexex" />
+			<parameter name="country" value="Egypt" />
+			<parameter name="state" value="Other (Non US)" />
+			<parameter name="cityname" value="alex" />
+			<parameter name="address1" value="smoha" />
+			<parameter name="address2" value="shatby" />
+			<parameter name="zipcode" value="21111" />
+			<parameter name="phonenumber" value="0100000000256" />
+			<parameter name="faxnumber" value="2568845615" />
+
+			<parameter name="creditcardtype" value="Visa" />
+			<parameter name="creditcardholdername" value="Barbara Gordon" />
+			<parameter name="cardnumber" value="4485564059489345" />
+			<parameter name="expiremonth" value="04" />
+			<parameter name="expireyear" value="2022" />
+			<parameter name="cardcode" value="123" />
+
+
+			<class name="tests.SmokeTest" />
+			<!--<class name="tests.RegressionTest" /> -->
+		</classes>
+	</test>
+
+
+
+</suite> <!-- Suite -->  
