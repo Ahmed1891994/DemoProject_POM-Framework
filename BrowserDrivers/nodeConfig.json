@@ -1,0 +1,33 @@
+{
+  "capabilities": [
+    {
+      "browserName": "firefox",
+      "acceptSslCerts": true,
+      "javascriptEnabled": true,
+      "takesScreenshot": false,
+      "firefox_profile": "",
+      "browser-version": "27",
+      "platform": "WINDOWS",
+      "maxInstances": 5,
+      "firefox_binary": "",
+      "cleanSession": true
+    },
+    {
+      "browserName": "chrome",
+      "maxInstances": 5,
+      "platform": "WINDOWS",
+      "webdriver.chrome.driver": "C:\Windows\System32\cmd.exe"
+    }
+  ],
+  "configuration": {
+    "_comment" : "Configuration for Node",
+    "cleanUpCycle": 2000,
+    "timeout": 30000,
+    "proxy": "org.openqa.grid.selenium.proxy.WebDriverRemoteProxy",
+    "port": 5555,
+    "host": ip,
+    "register": true,
+    "hubPort": 4444,
+    "maxSession": 5
+  }
+}

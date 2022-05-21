@@ -91,6 +91,8 @@ public class AddressesAccountPage extends BasePage {
 			int i;
 			By deletebutton;
 			for (i = num; i > 0; --i) {
+				//deletebutton = By.id("Address_FaxNumber");
+				//ExplicitWaitUntilVisible(saveaddressbutton, 5);
 				deletebutton = By.xpath("(//input[@value='Delete'])[" + i + "]");
 				ExplicitWaitUntilVisible(deletebutton, 5);
 				driver.findElement(deletebutton).click();

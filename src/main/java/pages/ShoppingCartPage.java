@@ -38,8 +38,6 @@ public class ShoppingCartPage extends BasePage {
 	}
 
 	public boolean CheckDiscountDone() {
-		// String discount =
-		// driver.findElement(By.xpath("//table[@class='cart-total']//tbody//tr[4]//td[2]")).getText();
 		String pricewithoutdiscount = driver.findElement(By.xpath("//table[@class='cart-total']//tbody//tr[1]//td[2]"))
 				.getText();
 		String pricewithdiscount = driver.findElement(By.xpath("//table[@class='cart-total']//tbody//tr[5]//td[2]"))

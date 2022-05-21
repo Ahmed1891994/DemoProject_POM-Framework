@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -17,6 +19,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,7 +28,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BasePage {
-	public static WebDriver driver ; 
+	public static WebDriver driver; 
+	public ThreadLocal<RemoteWebDriver> Remdriver = null;
 	public Select select ; 
 	public Actions action ; 
 	public Properties prop;
@@ -40,43 +45,73 @@ public class BasePage {
 	//******************************************************************************//
 	// Handle configuration to start Browser
 		@BeforeMethod(alwaysRun = true, description = "setup browser configuration")
-		public void SetUpBrowser() {
+		public void SetUpBrowser() throws MalformedURLException {
 			
 			// Initialize properties variables
 			
-			String browser = null;
-			String website = null;
+			String BRAWSER = null;
+			String BaseURL = null;
+			String seleniumGrid_Enabled = null;
+			
 			
 			// load properties from properties file and save it in variables
 			prop = new Properties();
 			Properties prop = LoadProperties();
-			browser = prop.getProperty("browser");
-			website = prop.getProperty("website");
+			BRAWSER = prop.getProperty("browser");
+			BaseURL = prop.getProperty("website");
+			seleniumGrid_Enabled = prop.getProperty("seleniumGrid_Enabled");
 
-			// Setup browser configuration to open
-			if (browser.contains("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
-				ChromeOptions options = new ChromeOptions();
-				if (browser.contains("headless"))
-					options.addArguments("headless");
-				driver = new ChromeDriver(options);
-
-			} else if (browser.contains("edge")) {
-				System.setProperty("webdriver.edge.driver", "BrowserDrivers/msedgedriver.exe");
-				driver = new EdgeDriver();
+			if(seleniumGrid_Enabled.contains("N"))
+			{
+				// Setup browser configuration to open
+				if (BRAWSER.contains("chrome")) {
+					System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
+					ChromeOptions options = new ChromeOptions();
+					if (BRAWSER.contains("headless"))
+						options.addArguments("headless");
+					driver = new ChromeDriver(options);
+	
+				} else if (BRAWSER.contains("edge")) {
+					System.setProperty("webdriver.edge.driver", "BrowserDrivers/msedgedriver.exe");
+					driver = new EdgeDriver();
+				}
+				// open specified website
+				driver.get(BaseURL);
+	
+				// maximize window
+				driver.manage().window().maximize();
 			}
-			
-			// open specified website
-			driver.get(website);
-
-			// maximize window
-			driver.manage().window().maximize();
+			else if(seleniumGrid_Enabled.contains("Y"))
+			{
+				Remdriver = new ThreadLocal<>();
+				DesiredCapabilities caps = new DesiredCapabilities();
+				caps.setCapability("Brawser Name", BRAWSER);
+				
+				// Selenium Grid Local
+				Remdriver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),caps));
+		        getDriver().manage().window().maximize();
+		        getDriver().navigate().to(BaseURL);
+		    }
 		}
-
+	    public WebDriver getDriver()
+	    {
+	        return Remdriver.get();
+	    }
+		
 		// Close the browser and end session
 		@AfterMethod(alwaysRun = true, description = "End session and close browser")
 		public void closeBrowser() {
-			driver.close();
+			String seleniumGrid_Enabled = prop.getProperty("seleniumGrid_Enabled");
+			if(seleniumGrid_Enabled.contains("N"))
+			{
+				driver.close();
+			}
+			else if(seleniumGrid_Enabled.contains("Y"))
+			{
+				getDriver().quit();
+				Remdriver.remove();
+			
+			}
 		}
 		
 	

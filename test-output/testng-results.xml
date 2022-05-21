@@ -2,80 +2,80 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-24T11:21:52 EET" name="Default suite" finished-at="2022-01-24T11:22:59 EET" duration-ms="66733">
+  <suite started-at="2022-05-13T00:49:44 EET" name="Default suite" finished-at="2022-05-13T00:51:24 EET" duration-ms="99349">
     <groups>
     </groups>
-    <test started-at="2022-01-24T11:21:52 EET" name="Default test" finished-at="2022-01-24T11:22:59 EET" duration-ms="66733">
+    <test started-at="2022-05-13T00:49:44 EET" name="Default test" finished-at="2022-05-13T00:51:24 EET" duration-ms="99349">
       <class name="tests.RegressionTest">
-        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:21:52 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-01-24T11:21:57 EET" duration-ms="4350" status="PASS">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:49:44 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-05-13T00:49:50 EET" duration-ms="5520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBrowser -->
-        <test-method signature="RegisterationWithExistemail()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:21:57 EET" name="RegisterationWithExistemail" description="register with preregistered Email" finished-at="2022-01-24T11:21:59 EET" duration-ms="2337" status="PASS">
+        <test-method signature="RegisterationWithExistemail()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:49:50 EET" name="RegisterationWithExistemail" description="register with preregistered Email" finished-at="2022-05-13T00:49:53 EET" duration-ms="2919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterationWithExistemail -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:21:59 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-01-24T11:21:59 EET" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:49:53 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-05-13T00:49:53 EET" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:21:59 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-01-24T11:22:03 EET" duration-ms="4092" status="PASS">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:49:53 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-05-13T00:49:56 EET" duration-ms="3213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBrowser -->
-        <test-method signature="CheckBillingAddressRequired()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:03 EET" name="CheckBillingAddressRequired" description="Checkout that Shipping address can&#039;t be done without Filling Address" finished-at="2022-01-24T11:22:19 EET" duration-ms="16113" status="PASS">
+        <test-method signature="CheckBillingAddressRequired()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:49:56 EET" name="CheckBillingAddressRequired" description="Checkout that Shipping address can&#039;t be done without Filling Address" finished-at="2022-05-13T00:50:37 EET" duration-ms="40753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckBillingAddressRequired -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:19 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-01-24T11:22:19 EET" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:50:37 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-05-13T00:50:38 EET" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:19 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-01-24T11:22:22 EET" duration-ms="2596" status="PASS">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:50:38 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-05-13T00:50:41 EET" duration-ms="3176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBrowser -->
-        <test-method signature="CheckDiscountDone()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:22 EET" name="CheckDiscountDone" description="Apply Discount and check discount is done perfectly" finished-at="2022-01-24T11:22:35 EET" duration-ms="12725" status="PASS">
+        <test-method signature="CheckDiscountDone()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:50:41 EET" name="CheckDiscountDone" description="Apply Discount and check discount is done perfectly" finished-at="2022-05-13T00:50:54 EET" duration-ms="13333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckDiscountDone -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:35 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-01-24T11:22:35 EET" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:50:54 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-05-13T00:50:55 EET" duration-ms="610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:35 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-01-24T11:22:37 EET" duration-ms="2654" status="PASS">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:50:55 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-05-13T00:50:58 EET" duration-ms="3478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBrowser -->
-        <test-method signature="CheckoutWithoutTerms()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:37 EET" name="CheckoutWithoutTerms" description="Check that checkoutPage can&#039;t be opened without approving Terms" finished-at="2022-01-24T11:22:51 EET" duration-ms="13522" status="PASS">
+        <test-method signature="CheckoutWithoutTerms()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:50:58 EET" name="CheckoutWithoutTerms" description="Check that checkoutPage can&#039;t be opened without approving Terms" finished-at="2022-05-13T00:51:12 EET" duration-ms="14351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckoutWithoutTerms -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:51 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-01-24T11:22:51 EET" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:51:12 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-05-13T00:51:13 EET" duration-ms="651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:51 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-01-24T11:22:54 EET" duration-ms="2803" status="PASS">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:51:13 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-05-13T00:51:17 EET" duration-ms="3406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBrowser -->
-        <test-method signature="InvalidEmailLogin()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:54 EET" name="InvalidEmailLogin" description="Login with invalid email" finished-at="2022-01-24T11:22:55 EET" duration-ms="995" status="PASS">
+        <test-method signature="InvalidEmailLogin()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:51:17 EET" name="InvalidEmailLogin" description="Login with invalid email" finished-at="2022-05-13T00:51:18 EET" duration-ms="1658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidEmailLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:55 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-01-24T11:22:55 EET" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:51:18 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-05-13T00:51:18 EET" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:55 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-01-24T11:22:58 EET" duration-ms="2709" status="PASS">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:51:18 EET" name="SetUpBrowser" description="setup browser configuration" finished-at="2022-05-13T00:51:22 EET" duration-ms="3210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBrowser -->
-        <test-method signature="InvalidPassLogin()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:58 EET" name="InvalidPassLogin" description="login with invalid password" finished-at="2022-01-24T11:22:59 EET" duration-ms="1312" status="PASS">
+        <test-method signature="InvalidPassLogin()[pri:1, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:51:22 EET" name="InvalidPassLogin" description="login with invalid password" finished-at="2022-05-13T00:51:24 EET" duration-ms="1886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidPassLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-01-24T11:22:59 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-01-24T11:22:59 EET" duration-ms="74" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.RegressionTest@28f2a10f]" started-at="2022-05-13T00:51:24 EET" name="closeBrowser" description="End session and close browser" finished-at="2022-05-13T00:51:24 EET" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
